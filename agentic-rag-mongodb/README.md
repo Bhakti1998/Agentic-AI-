@@ -6,20 +6,22 @@
 
   
 # OVERVIEW
-Traditional RAG pipelines follow a linear flow: retrieve → generate.
+Traditional RAG pipelines follow a linear flow: retrieve & generate.
 This project goes beyond that by implementing an agentic architecture where:
 
-1. A Planner Agent that breaks down queries and decides which tool to assign to which part of the query
-2  Tools Agent one for each specific domain that fetches relevant chunks using MongoDB Atlas Vector Search
-3. A Verifier Agent checks whether retrieved content sufficiently answers the query
-4. The system replans and re-retrieves if verification fails
-5. A Generator Agent produces the final answer only after validation
-6. This design improves answer reliability, domain correctness, and hallucination control.
-7. If the tools are not available of any potential errors are encountered in the process , then the worflow is terminated safely
+1. The vector embeddings are precomputed , chunked into relevant groups and is stored into MongoDB Atlas (Free Tier) using cosine similarity.
+2. Since the chunks are precomputed , and is stored safely in Mongo Db clusters , the requirement of computing embeddings eliminates completely.
+3. A Planner Agent that breaks down queries and decides which tool to assign to which part of the query.
+4. Tools Agent one for each specific domain that fetches relevant chunks using MongoDB Atlas Vector Search.
+5. A Verifier Agent checks whether retrieved content sufficiently answers the query
+6. The system replans and re-retrieves if verification fails
+7. A Generator Agent produces the final answer only after validation
+8. This design improves answer reliability, domain correctness, and hallucination control.
+9. If the tools are not available of any potential errors are encountered in the process , then the worflow is terminated safely
    <img width="535" height="579" alt="image" src="https://github.com/user-attachments/assets/ec50dab0-70bc-4b9a-8176-a3f95617340d" />
 
-# Tech Stack
 
+# Tech Stack
 1. LLMs: Groq / Qwen / LLaMA (configurable)
 2. Agent Framework: LangGraph / Langchain
 3. Vector Store: MongoDB Atlas Vector Search
@@ -27,6 +29,8 @@ This project goes beyond that by implementing an agentic architecture where:
 5. Embeddings: Precomputed offline
 6. Language: Python
 7. IDE: Cursor
+
+   
 
    
 
