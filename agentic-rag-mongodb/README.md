@@ -26,8 +26,8 @@ This project goes beyond that by implementing an agentic architecture where:
 2. Agent Framework: LangGraph / Langchain
 3. Vector Store: MongoDB Atlas Vector Search
 4. Similarity Metric: Cosine similarity
-5. Embeddings: Precomputed offline
-6. Language: Python
+5. Embeddings: MONGO DB ATLAS (Precomputed)
+6. Language: Python (3.12.9)
 7. IDE: Cursor
 
    
