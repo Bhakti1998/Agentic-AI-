@@ -17,7 +17,7 @@ This project goes beyond that by implementing an agentic architecture where:
 6. The system replans and re-retrieves if verification fails
 7. A Generator Agent produces the final answer only after validation
 8. This design improves answer reliability, domain correctness, and hallucination control.
-9. If the tools are not available of any potential errors are encountered in the process , then the worflow is terminated safely
+9. If the tools are not available for a user query or any potential errors are encountered in the process , then the worflow is terminated safely.
    <img width="535" height="579" alt="image" src="https://github.com/user-attachments/assets/ec50dab0-70bc-4b9a-8176-a3f95617340d" />
 
 
