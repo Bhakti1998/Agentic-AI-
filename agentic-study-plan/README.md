@@ -33,10 +33,10 @@ Concise summarization of study content
 Modular and extendable agent architecture  
 
 # Tech Stack
-LLMs: Groq 
-Agent Framework: LangGraph / Langchain
-Language: Python (3.12.9)
-IDE: Cursor
+1. LLMs: Groq
+2. Agent Framework: LangGraph / Langchain
+3. Language: Python (3.12.9)
+4. IDE: Cursor
 
 
 
