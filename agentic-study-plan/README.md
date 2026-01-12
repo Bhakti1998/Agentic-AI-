@@ -32,5 +32,11 @@ Real-time resource retrieval via Tavily Search API
 Concise summarization of study content  
 Modular and extendable agent architecture  
 
+# Tech Stack
+LLMs: Groq 
+Agent Framework: LangGraph / Langchain
+Language: Python (3.12.9)
+IDE: Cursor
+
 
 
