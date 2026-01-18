@@ -33,6 +33,12 @@ The primary goal is to explore how hybrid deterministic + LLM-driven agents can 
 6. Language: Python (3.12.9)
 7. IDE: Cursor
 
+# Limitations & Future Work
+1. Similarity thresholds are heuristic and domain-dependent
+2. Evaluation is currently qualitative; future work includes structured benchmarks
+3. Replanner logic can be extended with learned policies
+4. Multi-agent coordination is not yet explored
+
    
 
    
