@@ -6,8 +6,9 @@
 
   
 # OVERVIEW
-Traditional RAG pipelines follow a linear flow: retrieve & generate.
-This project goes beyond that by implementing an agentic architecture where:
+This project implements an agentic Retrieval-Augmented Generation (RAG) system with a strong emphasis on deterministic control, inspectable decision-making, and failure-aware replanning. Unlike prompt-heavy or fully autonomous agent designs, this system explicitly separates planning, retrieval, verification, replanning, and generation into well-defined stages.
+
+The primary goal is to explore how hybrid deterministic + LLM-driven agents can produce more reliable and debuggable behavior when answering complex, multi-topic queries.
 
 1. The vector embeddings are precomputed , chunked into relevant groups and is stored into MongoDB Atlas (Free Tier) using cosine similarity.
 2. Since the chunks are precomputed , and is stored safely in Mongo Db clusters , the requirement of computing embeddings eliminates completely.
