@@ -8,6 +8,7 @@ agentvenv/
 venv/
 .env/
 .env_dup/
+AGENTIC_*.ipynb
 
 
 __pycache__/
