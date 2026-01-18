@@ -39,6 +39,11 @@ The primary goal is to explore how hybrid deterministic + LLM-driven agents can 
 3. Replanner logic can be extended with learned policies
 4. Multi-agent coordination is not yet explored
 
+# Takeaway
+This project demonstrates that agentic RAG systems do not need to be fully autonomous to be effective. By enforcing deterministic verification and structured replanning, we can build agents that are more reliable, explainable, and engineer-friendly.
+
+This repository represents an architectural prototype and learning-focused exploration, not a production-ready system.
+
    
 
    
