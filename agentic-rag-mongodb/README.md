@@ -17,19 +17,25 @@ Traditional RAG pipelines often:
 # Agent Flow:
 
 Planner Agent:
-1. Breaks user queries into sub-tasks
+1. Breaks user queries into sub-tasks / sub-queries
 2. Determines which domain tools should be invoked
+3. Maps each sub-query to it's particular tool Domain.
+4. Returns the steps to be taken for smooth workflow.
 
 Tool Agents:
 1. Domain-specific retrievers backed by MongoDB Atlas Vector Search
 2. Fetch relevant document chunks using cosine similarity
+3. This approach pre-computes all the embeddings for the document chunks , and reduces the cost to re-compute the details again , improving overall latency.
+4. Retrival quality can be improved by enabling hybrid search backed by MongoDB Atlas Vector Search.
 
-Verifier Agent:
+Verifier Agent: (TRIGGERS REPLANNING )
 1. Validates whether retrieved context sufficiently answers the query
 2. Triggers replanning and re-retrieval if validation fails
+3. Currently the LLM is the core decision maker of the verifier routing , but this can be improved by combining it with more deterministic approaches that strengthens the decision making of the LLM.
 
 Generator Agent:
-1. Produces final output only after successful verification
+1. Produces final output only after successful verification.
+2. Checks the context thoroughly against the user provided query and provides a summarized final output.
 
 Safe Termination : 
 1. Workflow exits cleanly if tools are unavailable or repeated failures occur
@@ -39,6 +45,9 @@ Safe Termination :
 2. “Attention Is All You Need” (Transformer research paper) :  https://arxiv.org/pdf/1706.03762 
 3. Embeddings are precomputed offline, chunked, and stored in MongoDB Atlas to reduce runtime latency and inference cost.
 
+# LANGGRAPH DIAGRAM:
+   <img width="535" height="579" alt="image" src="https://github.com/user-attachments/assets/ec50dab0-70bc-4b9a-8176-a3f95617340d" />
+
 # Tech Stack:
 1. LLMs: Groq / Qwen / LLaMA (configurable)
 2. Agent Framework: LangGraph, LangChain
@@ -46,9 +55,6 @@ Safe Termination :
 4. Similarity Metric: Cosine similarity
 5. Language: Python 3.12.10
 6. IDE: Cursor
-
-# LANGGRAPH DIAGRAM:
-   <img width="535" height="579" alt="image" src="https://github.com/user-attachments/assets/ec50dab0-70bc-4b9a-8176-a3f95617340d" />
 
 # Key Design Decisions
 1. Deterministic agent orchestration instead of fully autonomous agents
