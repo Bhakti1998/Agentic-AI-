@@ -9,7 +9,7 @@ Welcome to my Agentic AI experimentation repository — a space where I design, 
 
 The focus is on predictability, control, and enterprise-grade reliability. Please feel free to collaborate and share feedbacks !
 
-# This is what I strive to achieve with Agentic AI workflows:
+This is what I strive to achieve with Agentic AI workflows:
 1. Deterministic Agent Routing where LLMs are used for reasoned decisions, not uncontrolled generation.
 2. Explicit Planning & Verification where every workflow supports validation, replanning, and safe failure paths.
 3. Creating scalable agentic workflows.
@@ -19,11 +19,10 @@ The focus is on predictability, control, and enterprise-grade reliability. Pleas
 This repository is a space for multiple agentic patterns:
 
 1. Agentic RAG
-   1.Domain-aware retrieval
-   2.Query decomposition
+   1. Domain-aware retrieval
+   2. Query decomposition
    3. Context verification
    4. Hallucination mitigation
-
 2. Supervisor-Driven Multi-Agent Systems
    1. Topic exploration
    2. Fact validation
