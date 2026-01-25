@@ -9,7 +9,7 @@ venv/
 .env/
 .env_dup/
 AGENTIC_*.ipynb
-
+PROJ_*
 
 __pycache__/
 *.pyc
