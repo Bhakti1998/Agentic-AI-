@@ -6,6 +6,12 @@ Unlike prompt-heavy or fully autonomous agent designs, the system explicitly sep
 
 The system answers domain-specific technical questions using curated knowledge sources while minimizing hallucinations through a verifier-driven feedback loop.
 
+# PRE REQUISITE:
+Create account on MongoDB Atlas : https://account.mongodb.com/account/login
+Choose free trial
+Upload the embeddings of the chunks in the clusters set available in MongoDb atlas.
+The chunks will be precomputed and saved in MongoDB , saving the computation time and resources.
+
 # Problem Statement
 Traditional RAG pipelines often:
 1. Retrieve irrelevant context
