@@ -10,6 +10,9 @@ venv/
 .env_dup/
 AGENTIC_*.ipynb
 PROJ_*
+analyst*
+Superstore*
+yt-*
 
 __pycache__/
 *.pyc
