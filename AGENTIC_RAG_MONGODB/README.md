@@ -3,6 +3,7 @@
 
 This project implements an agentic Retrieval-Augmented Generation (RAG) system focused on reliability, inspectability, and controlled execution.
 Unlike prompt-heavy or fully autonomous agent designs, the system explicitly separates planning, retrieval, verification, replanning, and generation into deterministic stages.
+This project follows a modular and separation-of-concerns architecture to ensure maintainability, extensibility, and testability.
 
 The system answers domain-specific technical questions using curated knowledge sources while minimizing hallucinations through a verifier-driven feedback loop.
 
@@ -77,4 +78,5 @@ Safe Termination :
 # Takeaway
 This project demonstrates that agentic RAG systems do not need full autonomy to be effective.
 Structured planning, verification, and controlled replanning can significantly improve reliability, explainability, and engineering confidence.
+
 
