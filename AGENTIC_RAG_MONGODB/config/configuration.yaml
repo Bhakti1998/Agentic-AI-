@@ -1,0 +1,24 @@
+groq:
+  llm1:
+    provider: "groq"
+    model_name: "llama-3.3-70b-versatile"
+    temperature: 0
+    max_output_tokens: 2048
+
+  llm2:
+      provider: "groq"
+      model_name: "groq/compound"
+      temperature: 0
+      max_output_tokens: 2048
+
+  llm3:
+      provider: "groq"
+      model_name: "qwen/qwen3-32b"
+      temperature: 0
+      max_output_tokens: 2048
+
+  llm4:
+      provider: "groq"
+      model_name: "llama-3.1-8b-instant"
+      temperature: 0
+      max_output_tokens: 2048
