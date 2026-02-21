@@ -1,0 +1,58 @@
+# This is a sample output of the AGENTIC RAG flow
+
+MAIN IS RUNNING.....
+GRAPH COMPILATION IN PROGRESS
+--- PLAN THE STEPS FOR THE EXECUTION ---
+'Step1': 'what is encoder-decoder': 'get_query_results_attn'
+'Step2': 'explain collections in MongoDb': 'get_results_mongo'
+---PLANING DONE----
+--- VERIFYING THE EMBEDDINGS FOR MONGO DB ---
+TOOLS AVAILABLE
+--- VERIFYING THE DATA ---
+--- DATA INSUFFICIENT RE-PLANNING  ---
+--- PLAN THE STEPS FOR THE EXECUTION ---
+'Step1': 'what is encoder-decoder': 'get_query_results_attn'
+---REPLANING DONE----
+--- VERIFYING THE EMBEDDINGS : ATTENTION IS ALL YOU NEED---
+TOOLS AVAILABLE
+--- VERIFYING THE DATA ---
+--- VERIFICATION COMPLETED  ---
+--- GENERATING THE ANSWER ---
+ANSWER:
+1. Question: what is encoder-decoder and explain collections in MongoDb  
+
+Generated Answer:
+- **Encoder‑Decoder Architecture**: A neural sequence‑to‑sequence framework where the **encoder** transforms an input token sequence (x₁…xₙ) into a continuous representation z (z₁…zₙ).
+- The **decoder** then generates an output sequence (y₁…yₘ) one token at a time, using the encoder’s representation and its own previously generated tokens (auto‑regressive).
+- In the Transformer, both encoder and decoder consist of stacked self‑attention and feed‑forward layers; the decoder also attends to the encoder’s output (encoder‑decoder attention).
+- This design enables parallel computation, high quality translation, and other sequence transduction tasks.        
+
+- **MongoDB Collections**: A collection is a group of BSON documents stored within a single database, analogous to aand its own previously generated tokens (auto‑regressive).
+- In the Transformer, both encoder and decoder consist of stacked self‑attention and feed‑forward layers; the decoder also attends to the encoder’s output (encoder‑decoder attention).
+- This design enables parallel computation, high quality translation, and other sequence transduction tasks.        
+
+- **MongoDB Collections**: A collection is a group of BSON documents stored within a single database, analogous to a table in an RDBMS.
+- Collections **do not enforce a schema**, so documents in the same collection may have different fields, though they usually serve a related purpose.
+- To create one, use `db.createCollection("name", { options })`; the `name` is the collection identifier and `options` can specify validation rules, capped size, etc.
+- Collections reside inside a **database**, which is a physical container on the file system; a MongoDB server can host many databases, each with its own set of collections.
+
+Thus, the encoder‑decoder model handles sequential data transformation, while MongoDB collections provide flexible, schema‑less storage for related documents.
+and its own previously generated tokens (auto‑regressive).
+- In the Transformer, both encoder and decoder consist of stacked self‑attention and feed‑forward layers; the decoder also attends to the encoder’s output (encoder‑decoder attention).
+- This design enables parallel computation, high quality translation, and other sequence transduction tasks.        
+
+- **MongoDB Collections**: A collection is a group of BSON documents stored within a single database, analogous to a table in an RDBMS.
+- Collections **do not enforce a schema**, so documents in the same collection may have different fields, though they usually serve a related purpose.
+- In the Transformer, both encoder and decoder consist of stacked self‑attention and feed‑forward layers; the decoder also attends to the encoder’s output (encoder‑decoder attention).
+- This design enables parallel computation, high quality translation, and other sequence transduction tasks.        
+
+- **MongoDB Collections**: A collection is a group of BSON documents stored within a single database, analogous to a- This design enables parallel computation, high quality translation, and other sequence transduction tasks.        
+
+- **MongoDB Collections**: A collection is a group of BSON documents stored within a single database, analogous to a
+
+- **MongoDB Collections**: A collection is a group of BSON documents stored within a single database, analogous to a- **MongoDB Collections**: A collection is a group of BSON documents stored within a single database, analogous to a table in an RDBMS.
+- Collections **do not enforce a schema**, so documents in the same collection may have different fields, though they usually serve a related purpose.
+- To create one, use `db.createCollection("name", { options })`; the `name` is the collection identifier and `options` can specify validation rules, capped size, etc.
+- Collections reside inside a **database**, which is a physical container on the file system; a MongoDB server can host many databases, each with its own set of collections.
+
+Thus, the encoder‑decoder model handles sequential data transformation, while MongoDB collections provide flexible, schema‑less storage for related documents.
