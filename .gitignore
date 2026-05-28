@@ -20,3 +20,7 @@ __pycache__/
 
 .ipynb_checkpoints/
 
+ATLASSIAN_TOOLS_TECH/
+AGENTIC_RAG_MONGODB/
+AI PROFICIENT/
+.deepval/
